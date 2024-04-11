@@ -108,10 +108,10 @@ function App() {
         <div className='scanlines' />
         <div className='desktop-icons'>
           <div className='welcome-icon' onClick={() => openWindow('welcome')}>
-            <Icon img='src/assets/icons/msie2-2.png' name='welcome' />
+            <Icon img='./src/assets/icons/msie2-2.png' name='welcome' />
           </div>
           <div className='about-me-icon' onClick={() => openWindow('about_me')}>
-            <Icon img='src/assets/icons/notepad_file-2.png' name='about_me' />
+            <Icon img='./src/assets/icons/notepad_file-2.png' name='about_me' />
           </div>
         </div>
         <div className='desktop-windows'>
@@ -125,7 +125,7 @@ function App() {
           </div> : null}
         </div>
         <div className='desktop-taskbar'>
-          <button className={showStartMenu ? 'start-button start-button-active' : 'start-button'} onClick={() => setShowStartMenu(!showStartMenu)}><img src='src/assets/imgs/my-melody.webp'/>Start</button>
+          <button className={showStartMenu ? 'start-button start-button-active' : 'start-button'} onClick={() => setShowStartMenu(!showStartMenu)}><img src='./src/assets/imgs/my-melody.webp'/>Start</button>
           <div className='taskbar-links'>
             {welcomeOpened ? <button className={showWelcome ? 'link-open' : 'link-minimized'} onClick={() => taskbarLinkOnClick('welcome')}>welcome</button> : null}
             {aboutMeOpened ? <button className={showAboutMe ? 'link-open' : 'link-minimized'} onClick={() => taskbarLinkOnClick('about_me')}>about me</button> : null}
@@ -134,11 +134,11 @@ function App() {
             {showStartMenu ? 
               <div className='startMenu'>
                 <div className='startMenu-link' onClick={() => {openWindow('welcome'); setShowStartMenu(false)}}>
-                    <img src='src/assets/icons/msie2-2.png'/>
+                    <img src='./src/assets/icons/msie2-2.png'/>
                     <p>welcome</p>
                 </div>
                 <div className='startMenu-link' onClick={() => {openWindow('about_me'); setShowStartMenu(false)}}>
-                    <img src='src/assets/icons/notepad_file-2.png' />
+                    <img src='./src/assets/icons/notepad_file-2.png' />
                     <p>about me</p>
                 </div>
               </div> : null}
