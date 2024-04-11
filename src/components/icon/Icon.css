@@ -1,0 +1,22 @@
+.desktop-icon {
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    border-radius: 5%;
+    padding: 10px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: normal;
+    color: white;
+    text-shadow: -1px 1px 1px black, 1px 1px 1px black, 1px -1px 1px black, -1px -1px 1px black;
+    gap: 7px;
+}
+
+.desktop-icon img {
+    width: 52px;
+}
+
+.desktop-icon p {
+    font-size: 16px;
+    margin: 0;
+}

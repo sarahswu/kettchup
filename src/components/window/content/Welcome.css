@@ -1,0 +1,39 @@
+.welcome {
+    background-color: white;
+    color: black;
+    margin: 0;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.welcome-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.welcome-header {
+    font-family: 'Mindset', Tahoma;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.welcome-header h1 {
+    font-size: 18px;
+}
+
+.dog-div {
+    width: 75px;
+    display: flex;
+    justify-content: center;
+}
+
+.dog {
+    width: 100px;
+}
+
+p {
+    font-size: 18px;
+}

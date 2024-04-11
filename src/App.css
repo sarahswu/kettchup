@@ -1,0 +1,163 @@
+@font-face {
+  font-family: 'NEC_APC3';
+  src: url('./fonts/Web437_NEC_APC3_8x16.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Mindset';
+  src: url('../../fonts/Web437_Mindset.woff') format('woff');
+}
+
+.App {
+  font-family: 'NEC_APC3', Tahoma;
+  image-rendering: pixelated;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #ffe4e9;
+}
+
+.desktop {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.scanlines {
+  margin: auto;
+  pointer-events: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  opacity: 0.3;
+  background-image: url(./assets/imgs/scanlines.png);
+  background-repeat: repeat;
+  animation: .7s linear 0s infinite normal scanlines;
+}
+
+@keyframes scanlines {
+  from {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.desktop-icons {
+  position: absolute;
+  z-index: 0;
+}
+
+.desktop-icons div {
+  cursor: pointer;
+}
+
+.desktop-windows .window{
+  position: absolute;
+  z-index: 900;
+}
+
+.desktop-taskbar {
+  position: absolute;
+  bottom: 0;
+  height: 30px;
+  width: 100%;
+  border-top: 2px solid;
+  border-color: white;
+  background-color: gainsboro;
+  display: flex;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.desktop-taskbar button {
+  height: 100%;
+  width: fit-content;
+}
+
+.start-button {
+  margin: 0 10px;
+  font-family: 'Mindset', Tahoma;
+  display: flex;
+  align-items: center;
+  padding: 0 3px;
+  gap: 5px;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.start-button-active {
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.taskbar-links {
+  height: 100%;
+  display: flex;
+  gap: 3px;
+}
+
+.link-open {
+  font-family: 'NEC_APC3', Tahoma;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.link-minimized {
+  font-family: 'NEC_APC3', Tahoma;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.onTop {
+  position: absolute;
+  z-index: 950;
+}
+
+.display-none {
+  display: none;
+}
+
+.startMenu {
+  position: absolute;
+  left: 10px;
+  bottom: 33px;
+  background-color: gainsboro;
+  color: black;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.startMenu-link {
+  display: flex;
+  gap: 10px;
+  padding: 10px 14px;
+}
+
+.startMenu-link:hover {
+  background-color: rgb(180, 180, 180);
+}
+
+.startMenu-link img {
+  width: 28px;
+}
+
+.startMenu-link p {
+  margin: 0;
+}
+

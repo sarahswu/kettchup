@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Mindset';
+    src: url('../../fonts/Web437_Mindset.woff') format('woff');
+}
+
+.window {
+    width: 600px;
+    height: 500px;
+    border: solid;
+    border-color: #68679e;
+    border-width: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+.maximized {
+    height: calc(100vh - 46px);
+    width: calc(100vw - 6px);
+    top: 0 !important;
+    left: 0 !important;
+}
+
+.window-bar {
+    background-color: #ffa6c0;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-bottom: solid;
+    border-width: 2.5px;
+    border-color: #68679e;
+}
+
+.window-url {
+    font-family: 'Mindset', Tahoma;
+    color: #2e2e65;
+    background-color: #ffd3db;
+    height: 70%;
+    width: calc(100% - 94px);
+    /* border: solid;
+    border-width: 2.5px;
+    border-color: #555481; */
+    cursor: default;
+    user-select: none;
+    display: flex;
+    align-items: center;
+}
+
+.window-url p {
+    margin: 0 0 0 10px;
+}
+
+button {
+    width: 22px;
+    height: 22px;
+}
+
+.window-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.window-close {
+    background-image: url('../../assets/imgs/window-close.png');
+    background-size: contain;
+    cursor: pointer;
+}
+
+.window-min {
+    background-image: url('../../assets/imgs/window-min.png');
+    background-size: contain;
+    cursor: pointer;
+}
+
+.window-max {
+    background-image: url('../../assets/imgs/window-max.png');
+    background-size: contain;
+    cursor: pointer;
+}
+
+.window-content {
+    height: calc(100% - 30px);
+    width: 100%;
+    margin: 0;
+}
+
+.onTop {
+    z-index: 950;
+}

@@ -1,0 +1,62 @@
+.font-mindset {
+    font-family: 'Mindset', Tahoma;
+}
+
+.about-me {
+    background-color: black;
+    color: white;
+    margin: 0;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.about-me h2 {
+    font-size: 24px;
+}
+
+.about-me p {
+    font-size: 20px;
+}
+
+.about-me-container {
+    margin: 50px auto;
+    width: 80%;
+    max-width: 800px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.border {
+    border: 5px solid white;
+    padding: 35px;
+}
+
+.about-me-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: 'Mindset', Tahoma;
+}
+
+.me-img {
+    width: 70px;
+    float: left;
+}
+
+.about-me-header h1 {
+    margin: 0;
+    overflow-y: auto;
+    font-size: 35px;
+}
+
+.about-me ul {
+    font-size: 20px;
+    list-style-type: '★ ';
+}
+
+.nestedListItem {
+    font-size: 16px;
+}
