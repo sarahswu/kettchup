@@ -31,7 +31,7 @@
   width: 100%;
   z-index: 999;
   opacity: 0.3;
-  background-image: url(public/assets/imgs/scanlines.png);
+  background-image: url(/kettchup/assets/imgs/scanlines.png);
   background-repeat: repeat;
   animation: .7s linear 0s infinite normal scanlines;
 }
