@@ -24,7 +24,7 @@ const AboutMe = () => {
                         <img src='assets/imgs/computer9.gif'/> I enjoy front-end web development, and my favourite to use currently is React because components allow for better organization and shorter files which is helpful when you're someone who gets confused by lots of information at once like me :P. Also have just started using TypeScript with it, and it's so convenient in catching mistakes during the development process.
                     </p>
                     <p>
-                        Recently, I've been trying to branch out and learn Node.js and Java Spring Boot to have a better understanding of all the levels of web development. It's difficult, but I'm starting to get the hang of it! <img src='src/assets/imgs/bunny46.gif' />
+                        Recently, I've been trying to branch out and learn Node.js and Java Spring Boot to have a better understanding of all the levels of web development. It's difficult, but I'm starting to get the hang of it! <img src='assets/imgs/bunny46.gif' />
                     </p>
                 </div>
                 <div className='border'>
